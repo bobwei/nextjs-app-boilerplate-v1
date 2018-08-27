@@ -3,11 +3,10 @@
   "version": "",
   "description": "",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node",
-    "start": "node lib/index.js",
-    "build": "npm run clean && babel src --out-dir lib --copy-files",
-    "test": "jest",
-    "clean": "rimraf lib"
+    "dev": "next src",
+    "start": "next start src",
+    "build": "next build src && next export src",
+    "test": "jest"
   },
   "author": "",
   "license": "MIT",
@@ -32,7 +31,11 @@
     "pretty-quick": "^1.6.0",
     "rimraf": "^2.6.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"

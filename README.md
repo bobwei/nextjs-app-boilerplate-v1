@@ -1,25 +1,22 @@
-# Js App Boilerplate
+# nextjs-app-boilerplate
 
-This is a js app boilerplate with batteries included to speed up project initiation.
-
-
-## Getting Started
-
-
-### Install
-
-```
-yarn
-```
-
-### Development
+## Development
 
 ```
 yarn dev
 ```
 
-### Test
+## Production
 
 ```
-yarn test
+yarn build
+yarn start
 ```
+
+## Deploy as Static Website for free
+
+```
+now --public --name ${YOUR_APP_NAME} deploy src/out
+```
+
+- [Deploying Static Apps](https://zeit.co/docs/static-deployments/introduction-and-deploying)
